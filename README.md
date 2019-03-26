@@ -4,7 +4,7 @@ GitHub Action that deployment your project to [fly.io](https://fly.io).
 
 ## Usage
 
-```
+```hcl
 workflow "New workflow" {
   on = "push"
   resolves = ["Deploy to Fly"]
