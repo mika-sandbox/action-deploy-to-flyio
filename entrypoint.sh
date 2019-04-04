@@ -1,6 +1,7 @@
 #!/bin/sh
 set -eu
 
-# deployment project (using FLY_ACCESS_TOKEN environment variable)
-fly deploy
+mkdir ~/.fly
+echo "access_token: $FLY_ACCESS_TOKEN" > ~/.fly/credentials.yml
 
+fly deploy
